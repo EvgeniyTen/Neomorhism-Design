@@ -1,15 +1,13 @@
 # Neomorphism-Design
 
-## Обзор
+# About
 
-"Neomorphism-Design" - это репозиторий, представляющий реализацию дизайна в стиле неоморфизма. Этот стиль, сочетающий в себе элементы скептоморфизма и плоского дизайна, приобретает популярность в современных пользовательских интерфейсах. Репозиторий предлагает готовые компоненты, которые можно легко интегрировать в ваши проекты.
+"Neomorphism-Design" is a repository showcasing the implementation of design in the neomorphism style. This style, which combines elements of skeuomorphism and flat design, is gaining popularity in modern user interfaces. The repository offers ready-made components that can be easily integrated into your projects. 
+
 ![Uploading Simulator Screen Recording - iPhone 15 Pro - 2024-01-28 at 15.49.52.gif…]()
 
+## How to Use
+To get started with "Neomorphism-Design", simply use the `.neomorphStyle(_ isAppeared: )` modifier.
 
-## Как использовать
-
-Чтобы начать работу с "Neomorphism-Design", просто воспользуйтесь модификатором .neomorphStyle(_ isAppeared: ).
-
-## Лицензия
-
-Проект не находится под защитой лицензии, это позволяет свободно использовать, модифицировать и распространять данный материал с соблюдением условий лицензии.
+## License
+This project is not under any protective license, which allows you to freely use, modify, and distribute this material in compliance with the terms of the license.

@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Neomorphism_Design_SPM
 
 struct ContentView: View {
-    @State var isAppeared: Bool = false
+    @State var isAppeared: Bool = true
 
     var body: some View {
         ZStack {
@@ -20,7 +21,6 @@ struct ContentView: View {
                 capsuleButton
                 rectangleButton
             }
-
         }
     }
 }
@@ -36,6 +36,7 @@ extension ContentView {
                     .imageScale(.large)
                 Text("Hello, world!")
             }
+            
             .foregroundStyle(.white)
             .fontWeight(.heavy)
             .padding(50)
@@ -43,8 +44,9 @@ extension ContentView {
                 Circle()
                     .foregroundColor(.accentColor)
             }
+            
         }
-        .neomorphStyle(isAppeared)
+        .neomorphStyle(isAppeared: isAppeared, shadowColor: .indigo, glareColor: .pink, opacityValue: 0.4)
     }
     
     var capsuleButton: some View {
@@ -65,7 +67,7 @@ extension ContentView {
                     .foregroundColor(.accentColor)
             }
         }
-        .neomorphStyle(isAppeared)
+        .neomorphStyle(isAppeared: isAppeared)
     }
     
     var rectangleButton: some View {
@@ -86,11 +88,13 @@ extension ContentView {
                     .foregroundColor(.accentColor)
             }
         }
-        .neomorphStyle(isAppeared)
+        .neomorphStyle(isAppeared: isAppeared)
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
 

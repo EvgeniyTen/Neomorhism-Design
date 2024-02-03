@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C875415F2B66865300647503 /* NeomorphModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875415E2B66865300647503 /* NeomorphModifier.swift */; };
-		C87541612B66866500647503 /* NeomorphButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87541602B66866500647503 /* NeomorphButtonStyle.swift */; };
+		C8B844E22B6E9E71002A57DF /* Neomorphism-Design-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = C8B844E12B6E9E71002A57DF /* Neomorphism-Design-SPM */; };
 		C8FA3C552B668041009CCAAB /* Neomorphism_DesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA3C542B668041009CCAAB /* Neomorphism_DesignApp.swift */; };
 		C8FA3C572B668041009CCAAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA3C562B668041009CCAAB /* ContentView.swift */; };
 		C8FA3C592B668042009CCAAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8FA3C582B668042009CCAAB /* Assets.xcassets */; };
@@ -16,8 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C875415E2B66865300647503 /* NeomorphModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeomorphModifier.swift; sourceTree = "<group>"; };
-		C87541602B66866500647503 /* NeomorphButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeomorphButtonStyle.swift; sourceTree = "<group>"; };
 		C8FA3C512B668041009CCAAB /* Neomorphism Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neomorphism Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FA3C542B668041009CCAAB /* Neomorphism_DesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neomorphism_DesignApp.swift; sourceTree = "<group>"; };
 		C8FA3C562B668041009CCAAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B844E22B6E9E71002A57DF /* Neomorphism-Design-SPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +55,6 @@
 			children = (
 				C8FA3C542B668041009CCAAB /* Neomorphism_DesignApp.swift */,
 				C8FA3C562B668041009CCAAB /* ContentView.swift */,
-				C875415E2B66865300647503 /* NeomorphModifier.swift */,
-				C87541602B66866500647503 /* NeomorphButtonStyle.swift */,
 				C8FA3C582B668042009CCAAB /* Assets.xcassets */,
 				C8FA3C5A2B668042009CCAAB /* Preview Content */,
 			);
@@ -89,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Neomorphism Design";
+			packageProductDependencies = (
+				C8B844E12B6E9E71002A57DF /* Neomorphism-Design-SPM */,
+			);
 			productName = "Neomorphism Design";
 			productReference = C8FA3C512B668041009CCAAB /* Neomorphism Design.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C8FA3C482B668041009CCAAB;
+			packageReferences = (
+				C8B844E02B6E9E71002A57DF /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = C8FA3C522B668041009CCAAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,8 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8FA3C572B668041009CCAAB /* ContentView.swift in Sources */,
-				C87541612B66866500647503 /* NeomorphButtonStyle.swift in Sources */,
-				C875415F2B66865300647503 /* NeomorphModifier.swift in Sources */,
 				C8FA3C552B668041009CCAAB /* Neomorphism_DesignApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +356,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C8B844E02B6E9E71002A57DF /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8B844E12B6E9E71002A57DF /* Neomorphism-Design-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Neomorphism-Design-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8FA3C492B668041009CCAAB /* Project object */;
 }
